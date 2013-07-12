@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css"/>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body ng-app="playApp">
+    <div class="container">
+        <div class="hero-unit" ng-controller="MainCtrl">
+            <h1>How about a password?</h1>
+            Using <a href="http://angularjs.org">Angular.js</a>
+
+            <div style="float:right">
+                <h3>Your password must</h3>
+                <ul style="list-style-type: none;">
+                    <li ng-repeat="rule in rules"><i ng-class="rule.class()"></i> {{rule.description}}</li>
+                </ul>
+            </div>
+            <p style="padding-top: 1em;">
+                <label>Password:</label>
+                <input type="password" ng-model="password1"/>
+            <div class="control-group" ng-class="!match() && 'error'">
+                <label>And again:</label>
+                <input type="password" ng-model="password2"/>
+            </div>
+            </p>
+        </div>
+    </div>
+
+    <script src="components/angular/angular.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+
+  </body>
+</html>
