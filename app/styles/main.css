@@ -4,3 +4,18 @@
 .icon-thumbs-up {
     color: green;
 }
+.container {
+    min-width: 800px;
+}
+.password-form {
+    padding-top: 1em;
+    float: left
+}
+.password-rules {
+    padding-top: 1em;
+    padding-left: 1em;
+    float: left;
+}
+.password-rules ul {
+    list-style-type: none;
+}
