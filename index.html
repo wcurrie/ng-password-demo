@@ -14,9 +14,10 @@
   <body ng-app="playApp">
     <div class="container">
         <div class="hero-unit" ng-controller="MainCtrl">
-            <h1>How about a password?</h1>
-            Using <a href="http://angularjs.org">Angular.js</a>
-
+            <h2>How about a password?</h2>
+            <div class="using">
+                Using <a href="http://angularjs.org">Angular.js</a>
+            </div>
             <div class="password-form">
                 <label>Password:</label>
                 <input type="password" ng-model="password1"/>
@@ -26,9 +27,12 @@
                 </div>
             </div>
             <div class="password-rules">
-                <label>Your password must</label>
+                <label>Your password must:</label>
                 <ul>
-                    <li ng-repeat="rule in rules"><i ng-class="rule.class()"></i> {{rule.description}}</li>
+                    <li ng-repeat="rule in rules">
+                        <i ng-class="rule.class()"></i>
+                        {{rule.description}}
+                    </li>
                 </ul>
             </div>
             <div class="clearfix"></div>

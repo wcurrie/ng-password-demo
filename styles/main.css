@@ -1,21 +1,33 @@
-.icon-thumbs-down {
+.icon-exclamation-sign {
     color: red;
 }
-.icon-thumbs-up {
+.icon-check {
     color: green;
-}
-.container {
-    min-width: 800px;
 }
 .password-form {
     padding-top: 1em;
     float: left
 }
 .password-rules {
-    padding-top: 1em;
-    padding-left: 1em;
     float: left;
+}
+@media (min-width: 590px) {
+    .password-rules {
+        padding-top: 1em;
+        padding-left: 2em;
+    }
 }
 .password-rules ul {
     list-style-type: none;
+    margin: 0;
+}
+.hero-unit {
+    padding: 30px;
+}
+h2 {
+    margin: 0;
+}
+.using {
+    font-size: small;
+    line-height: normal;
 }
