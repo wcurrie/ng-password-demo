@@ -1,4 +1,5 @@
 Simple demo of a set of password strength validation rules using [Angular.js](http://angularjs.org).
+Play with the [demo](http://wcurrie.github.io/ng-password-demo).
 
 ####How it works:
 
