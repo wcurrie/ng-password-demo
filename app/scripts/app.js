@@ -5,7 +5,7 @@ angular.module('playApp', [])
         function Rule(description, validator) {
             this.description = description;
             this.class = function () {
-                return validator() ? "icon-thumbs-up" : "icon-thumbs-down";
+                return validator() ? "icon-check" : "icon-exclamation-sign";
             }
         }
 
