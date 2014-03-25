@@ -4,7 +4,7 @@ angular.module('playApp', [])
     .controller('MainCtrl', function ($scope) {
         function Rule(description, validator) {
             this.description = description;
-            this.class = function () {
+            this.className = function () {
                 return validator() ? "icon-check" : "icon-exclamation-sign";
             }
         }
